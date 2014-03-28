@@ -25,7 +25,7 @@
     }
 
     .axis text {
-        font: 10px sans-serif;
+        font: 9px sans-serif;
     }
 
     .axis line,
@@ -40,8 +40,17 @@
         opacity: .7;
     }
     .station.hasData{
-        fill:blue;
-        opacity: 1;
+        fill: darkblue;
+        opacity: 0.5;
+    }
+    .station.hasData:hover{
+        fill: orangered;
+        opacity: .8;
+    }
+    .station.hasData text{
+        font: 12px sans-serif;
+        fill: red;
+        fill-opacity: 1;
     }
     .hourLine{
         fill:none;
@@ -51,6 +60,21 @@
     .brush .extent{
         fill:gray;
         opacity: .3;
+    }
+    .axis path,
+    .axis line {
+        fill: none;
+        stroke: lightgrey;
+        shape-rendering: crispEdges; }
+
+    .bar rect {
+      fill: steelblue;
+      shape-rendering: crispEdges;
+    }
+    .station.hasData:hover .textbox{
+        fill: gray;
+        opacity: 0.5;
+        shape-rendering: crispEdges;
     }
 
 
